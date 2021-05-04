@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">L03_Bill Please</string>
+    <string name="amt">Amount</string>
+    <string name="pax">No. Of Pax</string>
+    <string name="discount">Discount (%)</string>
+    <string name="radiobuttonCash">Cash</string>
+    <string name="radiobuttonPayNow">Pay Now</string>
+    <string name="buttonSplit">SPLIT</string>
+    <string name="buttonReset">RESET</string>
+</resources>

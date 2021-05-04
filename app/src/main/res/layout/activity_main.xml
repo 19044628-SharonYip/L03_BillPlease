@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/amt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:id="@+id/editTextAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pax"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:id="@+id/editTextPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/togglebuttonService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textOff="NO SVS"
+            android:textOn="SVS" />
+
+        <ToggleButton
+            android:id="@+id/togglebuttonGst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textOff="NO GST"
+            android:textOn="GST" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discount"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:id="@+id/editTextDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radiobuttonCash"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonPayNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radiobuttonPayNow"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/buttonSplit"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/buttonReset"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTotalBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#acc"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewEachPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fffbcc"
+        android:text="" />
+
+</LinearLayout>
